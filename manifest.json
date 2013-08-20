@@ -1,0 +1,29 @@
+{
+    "name": "LEI visualizador",
+    "version": "0.0.01",
+    "manifest_version": 2,
+    "description": "Identificador de artigos de lei",
+    
+    "background": "background.html",
+    
+    "permissions" :
+    [
+         "http://*/*" , "https://*/*"
+    ],
+    
+    "content_scripts":
+    [
+        {
+            "matches":
+            [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js":
+            [
+                "mainscript.js"
+            ],
+            "run_at" : "document_end"
+        }
+    ],
+}
