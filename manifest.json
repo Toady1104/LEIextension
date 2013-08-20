@@ -7,8 +7,8 @@
   },
   "page_action" :
   {
-    "default_icon" : "sandwich-19.png",
-    "default_title" : "There's a 'sandwich' in this page!"
+    "default_icon" : "icon-19.png",
+    "default_title" : "Palavra encontrada!"
   },
   "content_scripts" : [
     {
@@ -22,8 +22,8 @@
     }
   ],
   "icons" : {
-    "48" : "sandwich-48.png",
-    "128" : "sandwich-128.png"
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
   },
   "manifest_version": 2
 }
