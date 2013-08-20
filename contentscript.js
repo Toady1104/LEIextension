@@ -4,6 +4,7 @@
  * LICENSE file.
  */
 
+//var regex = /the/;
 var regex = /the/;
 
 // Test the text of the body element against our regular expression.
