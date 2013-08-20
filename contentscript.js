@@ -3,15 +3,19 @@
  * source code is governed by a BSD-style license that can be found in the
  * LICENSE file.
  */
+ 
+//var regex = /art/;
+//var regex2 = /artigo/;
 
-//var regex = /the/;
-//var regex = /the/;
+// art(?. )
 
-// Test the text of the body element against our regular expression.
 //if (regex.test(document.body.innerText))
 //{
-	document.body.innerHTML = document.body.innerHTML.replace(new RegExp("\\d\\d", "g"), "XX"); //document.body.innerText
+	//document.body.innerHTML = document.body.innerHTML.replace(new RegExp("\\d\\d", "gi"), "XX"); //document.body.innerText
+	document.body.innerHTML = document.body.innerHTML.replace(new RegExp( "art\\. \\d\\d\\d" , "gi"), "O ARTIGO"); //(("\\. ") || ("igo")) //("art\\.")|("artigo")
+	document.body.innerHTML = document.body.innerHTML.replace(new RegExp( "artigo \\d\\d\\d" , "gi"), "O ARTIGO");
 	//document.body.innerHTML.replace(new RegExp("uno", "g"), "dos");
+	
 	// The regular expression produced a match, so notify the background page.
 	chrome.extension.sendRequest({}, function(response) {});
 //} else
